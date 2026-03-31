@@ -1,0 +1,71 @@
+<!--tarea de formularios: Crear un formulario de registros
+para un sitio web para reservar hora al doctor
+Debe incluir: Nombre del paciente, fecha de cita,
+fecha de nacimiento Sintomas del paciente,Ciudad (lista_desplegable),
+Casilla de verificación-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro para el doctor</title>
+</head>
+
+<body>
+    <h1>Formularios de cita</h1>
+<form action="#" method="POST">
+    <div>
+        <label for="nombre">Nombre del paciente:</label>
+        <input type="text" id="nombre" name="nombre">
+    </div>
+    <div>
+        <label for="fecha_de_cita">Fecha de cita:</label>
+        <input type="date" id="fecha_de_cita" name="fecha_de_cita">
+    </div>
+    <div>
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+    </div>
+        <h2>sintomas del paciente</h2>
+        <div>
+        <label>Estilo de fuente:</label>
+    <input type="radio" id="negrita" name="estilo_fuente" value="bold">
+        <label for="negrita"><strong>Negrita</strong></label>
+        <input type="radio" id="normal" name="estilo_fuente" value="normal">
+        <label for="normal">Normal</label> 
+    </div>
+    <div>
+        <label for="comentario">Comentario:</label>
+        <textarea id="comentario" name="comentario" rows="4" cols="30"></textarea>
+    </div>
+    <input type="submit" value="Enviar">
+    <h2>Ciudad</h2>
+        <select id="Ciudad" name="Ciudad">
+        <option value="Arica">Arica</option>
+        <option value="">Iquique</option>
+        <option value="">Calama</option>
+        <option value="">Antofagasta</option>
+        <option value="">Atacama</option>
+        <option value="">Copiapo</option>
+        <option value="">La serena</option>
+        <option value="">Coquimbo</option>
+        <option value="">Viña del mar</option>
+        <option value="">Valparaiso</option>
+        <option value="">Santiago</option>
+        <option value="">Rancagua</option>
+        <option value="">Talca</option>
+        <option value="">Chillan</option>
+        <option value="">Pucon</option>
+        <option value="">Puerto varas</option>
+        <option value="">Puerto Montt</option>
+        <option value="">Isla de chiloe</option>
+        <option value="">Puerto chacabuco</option>
+        <option value="">coihaique</option>
+        <option value="">torres del paine</option>
+        <option value="">Puerto natales</option>
+        <option value="">Punta arenas</option>
+        </select>
+</form>
+</body>
+</html>

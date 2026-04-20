@@ -1,0 +1,48 @@
+
+
+.container{
+    margin: 0;
+    padding:0px
+    box-sizing: border-box;
+}
+
+body {
+    padding: 40px;
+    outline: 40px;
+   font-family: 'Roboto', sans-serif;
+
+}
+.textoIzquierda {
+   text-align: left;  /* Alineado a la izquierda */
+}
+
+.textoCentro {
+   text-align: center;  /* Alineado al centro */
+}
+
+.textoDerecha{
+   text-align: right;  /* Alineado a la derecha */
+}
+
+.subtitulo1{
+   text-decoration: underline;  /* Subrayado */
+   font-style: italic;  /* Cursiva */
+}
+
+.tachado {
+   text-decoration: line-through;  /* Texto tachado */
+}
+
+.sinDecoracion {
+   text-decoration: none;  /* Sin decoración */
+color: brown;
+}
+
+<!--Grosor de fuente
+.negrita{
+   font-weight: bold;  /* Negrita */
+}
+
+.semiNegrita{
+   font-weight: 500;  /* Fuente más delgada */
+}

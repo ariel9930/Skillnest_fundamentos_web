@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*contabiliza bordes*/
+}
+
+.encabezado {
+    width: 100%;
+    /* Todo el ancho de la pagina*/
+    background-color: burlywood;
+    padding: 15px;
+}
+
+.titulo_header {
+    text-align: center;
+    color: black;
+}
+
+.container {
+    outline: solid 1px grey;
+    padding: 20px;
+    width: 900px;
+    margin: 0 auto;
+    /*Centrar un elemento*/
+}
+
+/*tamaños ejemplos css*/
+.aceptar {
+    width: 100px;
+    height: 50px;
+}
+
+.caja1 {
+    width: 80%;
+    /*porcentaje para dar tamaño 80/100 */
+    height: 200px;
+    background-color: brown;
+    margin: 0 auto;
+}
+
+.parrafo1 {
+    font-size: 30px;
+}
+
+.link1 {
+    font-size: 300%;
+}
+
+.cursiva {
+    color: cadetblue;
+     margin-top: 15px;
+    font-style: italic;
+}

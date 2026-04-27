@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline: solid 1px;
     /*contabiliza bordes*/
 }
 
@@ -49,6 +50,38 @@
 
 .cursiva {
     color: cadetblue;
-     margin-top: 15px;
+    margin-top: 15px;
     font-style: italic;
+}
+    
+/*📦 Manejo del contenido con overflow, hidden, scroll, auto
+*/
+div {
+width: 200px;
+height: 100px;
+overflow: auto;
+}
+.example1{
+background-color: rgb(0, 0, 255);
+height: 100px;
+width: 300px;
+}
+.example2{
+background-color: green;
+height: 100px;
+width: 300px;
+}
+.example3{
+background-color: blueviolet;
+height: 100px;
+width: 300px;
+}
+.hidden{ /*Oculta los elementos que sobresalen*/
+overflow: hidden;
+}
+.scroll{
+overflow: scroll;
+}
+.auto{
+overflow:auto;
 }

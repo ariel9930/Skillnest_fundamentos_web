@@ -56,10 +56,10 @@
     
 /*📦 Manejo del contenido con overflow, hidden, scroll, auto
 */
-div {
+.caja{
 width: 200px;
 height: 100px;
-overflow: auto;
+display:inline-block; /* elementos en bloques o columnas*/
 }
 .example1{
 background-color: rgb(0, 0, 255);
@@ -84,4 +84,32 @@ overflow: scroll;
 }
 .auto{
 overflow:auto;
+}
+
+/*🎨 Fondo y colores*/
+.banner{
+    height: 600px;
+    width: 100%;
+   background: red url("/STACK_CSS/06_tamanos/static/images/invincible-season-2-exclusive-poster-revealed_d5d9.jpg") no-repeat fixed center center;
+   background-size: 90%;
+}
+
+/*🟫 Bordes y estilos*/
+
+.aceptar{
+   border: 2px dotted green;
+}
+
+.articulo{
+   border: 1px solid black;
+
+   /*🟢 Bordes redondeados*/
+
+}
+.boton_redondeado{
+   border-radius: 5px;
+}
+
+.caja_redondeada{
+   border-radius: 50%;
 }

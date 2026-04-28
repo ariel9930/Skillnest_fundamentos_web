@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    outline: solid 1px;
     /*contabiliza bordes*/
 }
 
@@ -24,6 +23,10 @@
     width: 900px;
     margin: 0 auto;
     /*Centrar un elemento*/
+}
+
+.row {
+    padding: 30px;
 }
 
 /*tamaños ejemplos css*/
@@ -53,63 +56,130 @@
     margin-top: 15px;
     font-style: italic;
 }
-    
+
 /*📦 Manejo del contenido con overflow, hidden, scroll, auto
 */
-.caja{
-width: 200px;
-height: 100px;
-display:inline-block; /* elementos en bloques o columnas*/
+.caja {
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    /* elementos en bloques o columnas*/
 }
-.example1{
-background-color: rgb(0, 0, 255);
-height: 100px;
-width: 300px;
+
+.example1 {
+    background-color: rgb(0, 0, 255);
+    height: 100px;
+    width: 300px;
 }
-.example2{
-background-color: green;
-height: 100px;
-width: 300px;
+
+.example2 {
+    background-color: green;
+    height: 100px;
+    width: 300px;
 }
-.example3{
-background-color: blueviolet;
-height: 100px;
-width: 300px;
+
+.example3 {
+    background-color: blueviolet;
+    height: 100px;
+    width: 300px;
 }
-.hidden{ /*Oculta los elementos que sobresalen*/
-overflow: hidden;
+
+.hidden {
+    /*Oculta los elementos que sobresalen*/
+    overflow: hidden;
 }
-.scroll{
-overflow: scroll;
+
+.scroll {
+    overflow: scroll;
 }
-.auto{
-overflow:auto;
+
+.auto {
+    overflow: auto;
 }
 
 /*🎨 Fondo y colores*/
-.banner{
+.banner {
     height: 600px;
     width: 100%;
-   background: red url("/STACK_CSS/06_tamanos/static/images/invincible-season-2-exclusive-poster-revealed_d5d9.jpg") no-repeat fixed center center;
-   background-size: 90%;
+    background: red url("/STACK_CSS/06_tamanos/static/images/images.ico") fixed center center;
+    background-size: 5%;
 }
 
 /*🟫 Bordes y estilos*/
 
-.aceptar{
-   border: 2px dotted green;
+.cancelar {
+    border: 2px dotted rgb(255, 0, 0);
+    /*dotted: linea segmentada-------*/
+    padding: 15px;
+    cursor: pointer;
 }
 
-.articulo{
-   border: 1px solid black;
-
-   /*🟢 Bordes redondeados*/
+.articulo {
+    border: 2px solid black;
+    /*solid: linea solida*/
+    height: 50px;
+    width: 100px;
+    /*🟢 Bordes redondeados*/
 
 }
-.boton_redondeado{
-   border-radius: 5px;
+
+.boton_redondeado {
+    padding: 10px 40px;
+    border-radius: 15px;
 }
 
-.caja_redondeada{
-   border-radius: 50%;
+.caja_redondeada {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 11px 16px;
+    background-color: blueviolet;
+    color: azure;
+    border-radius: 50%;
+}
+
+.cajitas {
+    width: 150px;
+    height: 40px;
+    outline: solid 1px violet;
+}
+
+.box1 {
+    background-color: darkgrey;
+    padding: 10px;
+    /*padding aplicado en todos los lados*/
+}
+
+.box2 {
+    background-color: rgb(23, 156, 112);
+    padding-top: 0px;
+    /*Espacio interno: arriba*/
+    padding-right: 5px;
+    /*Espacio interno: derecha*/
+    padding-bottom: 0px;
+    /*Espacio interno: abajo*/
+    padding-left: 5px;
+    /*Espacio interno: izquierda*/
+    /*padding: 0px 5px 0px 5px ----> Aplicando en todos los lados*/
+    /*padding: 0px 5px ------> 0px del eje(Y) y 5px del eje(X)*/
+}
+
+.box3 {
+    background-color: cornflowerblue;
+    margin: 10px;
+    /*Margen externo: separa elementos*/
+}
+
+.box4 {
+    background-color: bisque;
+    margin: 0px 20px;
+    /* eje X modificado con margin*/
+    padding: 5px 0px;
+    /* eje Y modificado con padding*/
+}
+
+.box5 {
+    float: left;
+    width: 30%;
+    background-color: rgb(255, 255, 255);
 }

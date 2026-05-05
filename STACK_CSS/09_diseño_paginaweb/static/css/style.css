@@ -1,0 +1,72 @@
+.contenedor {
+text-align: center;
+
+}
+
+.tarjeta {
+   display: inline-block;
+   width: 300px;
+   height: 200px;
+   background-color:#52A5DE;
+   margin: 10px;
+   text-align: center;
+   line-height: 100px;
+   border-radius: 10px;
+   color: white;
+   font-weight: bold;
+}
+
+/*-------------------------------------Sitio index---------------------------------------------------------------------------------*/
+*{
+   padding:0;
+margin: 0;
+box-sizing: border-box;
+font-family: Arial,sans-serif;
+}
+
+/* HEADER */
+.header{
+   background-color:#173353;
+   color: rgb(255, 255, 255);
+   text-align: center;
+   padding:20px;
+}
+
+.menu{
+   margin-top: 1px;
+
+}
+
+.boton{
+   display: inline-block;
+   background-color:#214875;
+   color: white;
+   text-decoration: none;
+   padding: 10px 20px;
+}
+
+/* MAIN */
+.contenedor_principal{
+   padding:15px;
+}
+.colorr{
+    text-align: center;
+    background-color:#214875;
+    
+}
+.centro{
+    text-align: center;
+    margin:50px;
+    color: rgb(255, 255, 255);
+    background-color:#214875;
+    width:1000px;
+    height:200px;
+    border-radius:10px;
+padding: 20px;
+}
+.pass{
+    margin:30px;
+}
+.pig{
+    margin:30px;
+}

@@ -14,3 +14,77 @@ text-align: center;
    color: white;
    font-weight: bold;
 }
+
+/*-------------------------------------Sitio index---------------------------------------------------------------------------------*/
+*{
+   padding:0;
+margin: 0;
+box-sizing: border-box;
+font-family: Arial,sans-serif;
+}
+
+/* HEADER */
+.header{
+   background-color: rgba(0, 0, 0, 0.637);
+   color: rgb(255, 255, 255);
+   padding:20px;
+   text-align: center;
+}
+
+.menu{
+   margin-top: 10px;
+
+}
+
+.boton{
+   display: inline-block;
+   background-color: rgb(48, 45, 45);
+   color: white;
+   text-decoration: none;
+   padding: 10px 20px;
+   margin: 5px;
+   border-radius: 5px;
+}
+.boton:hover{
+   background-color: rgb(80, 77, 77);
+}
+/* MAIN */
+.contenedor_principal{
+   padding:15px;
+}
+
+
+.resaltado{
+   display :inline-block;
+   background-color: rgb(194, 192, 166);
+   font-weight: bold;
+}
+
+.contenedor_tarjetas{
+   text-align: center;
+   padding:20px;
+}
+.box{
+   display: inline-block;
+   width: 150px;
+   height:100px;
+   background-color: rgb(66, 63, 63);
+   color:white;
+   margin: 10px;
+   padding: 10px;
+   border-radius: 10px;
+}
+.bloque{
+   display: block; /* Alinea en bloques hacia abajo*/
+   background-color: rgb(66, 57, 57);
+   color: white;
+   margin:10px;
+   padding:15px;
+}
+/*FOOTER*/
+.footer{
+   background-color: rgb(65, 58, 58);
+   color: white;
+   text-align: center;
+   padding: 15px;
+}

@@ -1,0 +1,50 @@
+*{
+    padding:0;
+    margin:0;
+}
+.Fondo{
+    background-color:#DBD9D8;
+}
+.Titulo{
+background-color:#3F8817;
+text-align: center;
+margin:5px;
+width:1300px;
+height:110px;
+color:white;
+padding:3px;
+font-size: 25px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.cajas{
+    display: inline-block;
+    background-color:#335FDD;
+    width:150px;
+    height:450px;
+    text-align: center;
+    padding:20px;
+    overflow: hidden;
+}
+.boton{
+    border-radius: 50px;
+    background-color:#FAEE30;
+    text-decoration: none;
+    width: 140px;
+    height:55px;
+    margin:5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border:none;
+}
+.Fondorojo{
+    background-color:#E42E2D;
+
+    width:900px;
+    height:250px;
+    margin:25px;
+    overflow: hidden;
+    display: inline-block;
+}
+.section{
+    overflow: hidden;
+}

@@ -1,50 +1,120 @@
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
 }
-.Fondo{
-    background-color:#DBD9D8;
+
+.Fondo {
+    background-color: #DBD9D8;
 }
-.Titulo{
-background-color:#3F8817;
-text-align: center;
-margin:5px;
-width:1300px;
-height:110px;
-color:white;
-padding:3px;
-font-size: 25px;
-font-family: Arial, Helvetica, sans-serif;
-}
-.cajas{
-    display: inline-block;
-    background-color:#335FDD;
-    width:150px;
-    height:450px;
+
+.Titulo {
+    background-color: #3F8817;
     text-align: center;
-    padding:20px;
-    overflow: hidden;
+    margin: 5px;
+    width: 1275px;
+    height: 110px;
+    margin-left: 25px;
+    box-shadow: 5px 5px 5px rgba(104, 103, 103, 0.596);
 }
-.boton{
+
+.cajas {
+    display: inline-block;
+    background-color: #335FDD;
+    width: 150px;
+    height: 450px;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    margin-left: 30px;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.651);
+    margin: 20px;
+}
+
+.boton {
     border-radius: 50px;
-    background-color:#FAEE30;
+    background-color: #FAEE30;
     text-decoration: none;
     width: 140px;
-    height:55px;
-    margin:5px;
-    font-family: Arial, Helvetica, sans-serif;
+    height: 55px;
+    margin: 5px;
+    font-weight: bold;
     font-size: 15px;
-    border:none;
+    border: none;
+    box-shadow: 5px 5px 5px 5px #213b83;
 }
-.Fondorojo{
-    background-color:#E42E2D;
-
-    width:900px;
-    height:250px;
-    margin:25px;
+.contenedor{
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+}
+.Fondorojo {
+    background-color: #E42E2D;
+    width: 1050px;
+    padding: 10px 0;
+    margin: 25px;
     overflow: hidden;
     display: inline-block;
+    text-align: center;
+    vertical-align: top;
 }
-.section{
+
+.section {
     overflow: hidden;
+}
+
+.tiitulo {
+    color: white;
+    font-size: 50px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Amarillo {
+    padding: 40px;
+    margin: 15px;
+    display: inline-block;
+    background-color: #FBF401;
+    width: 150px;
+    height: 125px;
+    box-shadow: 5px 5px 5px 5px #851e1ec5;
+}
+
+.morado {
+    background-color: #8F2487;
+    height: 115px;
+    width: 72.5%;
+    margin-left: 145px;
+    box-shadow: 5px 5px 5px 5px #851e1ec5;
+}
+
+.button {
+    border-radius: 50px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    margin: 25px;
+    color: #8F2487;
+    font-weight: bold;
+    font-size: 25px;
+    box-shadow: 5px 5px 5px 5px #31102f85;
+}
+
+.gray {
+    width: 50%;
+    margin-left:22px;
+    color:gray;
+}
+.grayy{
+    background-color: gray;
+    width:1000px;
+}
+.grayyy{
+    background-color:gray;
+    margin:15px;
+    margin-left:3px;
+     width:997px;
+}
+.grayyyy{
+    background-color:gray;
+    width:750px;
 }

@@ -1,13 +1,18 @@
 *{
-    margin:0px;
     padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+boddy{
+    background-color:#FDF6EC;
 }
 .titulo{
     background-color:#34495E;
+    height:125px;
     text-align: center;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-height:130px;}
+    color:white;
+}
 .h1{
     padding:20px;
 }

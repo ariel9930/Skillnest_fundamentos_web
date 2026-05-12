@@ -1,0 +1,70 @@
+.container {
+    justify-content: center;
+    display: flex;
+    /* Activa flexbox en este contenedor */
+    background-color: #f0f0f0;
+    padding: 20px;
+    flex-wrap: wrap;
+    /**/
+}
+
+.item {
+    background-color: #00ade5;
+    color: #fff;
+    margin: 20px;
+    padding: 20px;
+}
+
+.row {
+    flex-direction: row;
+    /* dirección en filas*/
+}
+
+.column {
+    flex-direction: column;
+    /* dirección en columnas*/
+}
+
+.start {
+    justify-content: flex-start;
+    /*Alinear ala izquierda*/
+}
+
+.center {
+    justify-content: center;
+    /*Centrar cada elemento*/
+}
+
+.space-between {
+    justify-content: space-between;
+    /*Distribuicion de elementos perfectos*/
+}
+
+/*Ejemplo skillnestt*/
+
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f4f4f4;
+   padding: 20px;
+}
+
+.contenedor{
+   background: #ffffff;
+   padding: 20px;
+   border-radius: 10px;
+
+   /* Propiedades flexbox */
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   flex-direction: row;
+
+}
+
+.elemento{
+   margin: 10px;
+   background-color: #00ade5;
+   color: #ffffff;
+   padding: 20px;
+   border-radius: 10px;
+}

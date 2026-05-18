@@ -8,15 +8,27 @@ body {
     background-color: #F4F4F4;
 }
 
-img {
-    width: 150px;
-    height: 150px;
+img{
+    width: 200px;
+    height: 200px;
     background-color: #fff;
     border-radius: 10px;
-    margin: 40px auto;
-    padding: 50px 0;
+    box-shadow: 5px 5px 5px 5px rgba(201, 198, 198, 0.575);
+    
 }
 
 .titulo {
     text-align: center;
+    gap:10px;
+}
+.center{
+    display: flex;
+    justify-self: center;
+    gap:15px;
+    margin-bottom:10px;
+}
+.tituloo{
+    text-align: center;
+    gap:10px;
+    font-size: 7px;
 }

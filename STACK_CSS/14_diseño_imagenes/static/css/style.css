@@ -8,27 +8,29 @@ body {
     background-color: #F4F4F4;
 }
 
-img{
+img {
     width: 200px;
     height: 200px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 5px rgba(201, 198, 198, 0.575);
-    
+
 }
 
 .titulo {
     text-align: center;
-    gap:10px;
+    gap: 10px;
 }
-.center{
+
+.center {
     display: flex;
     justify-self: center;
-    gap:15px;
-    margin-bottom:10px;
+    gap: 15px;
+    margin-bottom: 10px;
 }
-.tituloo{
+
+.tituloo {
     text-align: center;
-    gap:10px;
+    gap: 10px;
     font-size: 7px;
 }

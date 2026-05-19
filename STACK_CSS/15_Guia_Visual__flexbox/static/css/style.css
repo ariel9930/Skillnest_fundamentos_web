@@ -1,100 +1,117 @@
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: rgb(177, 168, 168);
     font-family: Arial, Helvetica, sans-serif;
-    color:black;
+    color: black;
 }
 
-header{
-    background-color:#1e293b;
-    color:white;
+header {
+    background-color: #1e293b;
+    color: white;
     text-align: center;
-    padding:30px;
+    padding: 30px;
 }
 
 /* Diseño  NAV*/
-.nav{
+.nav {
     background-color: #334155;
-    padding:15px;
+    padding: 15px;
     display: flex;
-    justify-content: center; /* Centrar contenido solo con flex*/
-    gap:20px; /*separa elementos solo con flex*/
+    justify-content: center;
+    /* Centrar contenido solo con flex*/
+    gap: 20px;
+    /*separa elementos solo con flex*/
 }
-.nav a{
-    color:white;
+
+.nav a {
+    color: white;
     text-decoration: none;
-    font-weight: bold;/* para negrita*/
+    font-weight: bold;
+    /* para negrita*/
 }
-.main{
-    padding:30px;
+
+.main {
+    padding: 30px;
 }
+
 /**/
-.seccion{
-    background-color:white;
-    margin-bottom:40px;
-    padding:20px;
-    border-radius:20px;
+.seccion {
+    background-color: white;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 20px;
     box-shadow: 0px 2px 8px rgba(51, 48, 48, 0.712);
 }
-.contenedor{
-    background-color:rgb(243, 238, 238);
-    height:200px;
-    border:3px dashed #94a3b8;
-    margin-top:20px;
+
+.contenedor {
+    background-color: rgb(243, 238, 238);
+    height: 200px;
+    border: 3px dashed #94a3b8;
+    margin-top: 20px;
     display: flex;
 }
+
 /* Cajas a manipular*/
-.cajas{
-    width:80px;
-    height:80px;
-    background-color:steelblue;
-    color:white;
-    font-size:24px;
+.cajas {
+    width: 80px;
+    height: 80px;
+    background-color: steelblue;
+    color: white;
+    font-size: 24px;
     font-weight: bold;
-    border-radius:10px;
+    border-radius: 10px;
     display: flex;
-    justify-content: center;/*Centra horizontalmente*/
-    align-items: center;/*Centra verticalmente*/
+    justify-content: center;
+    /*Centra horizontalmente*/
+    align-items: center;
+    /*Centra verticalmente*/
 }
+
 /*EJEMPLO*/
 /*1.- Justify-content + gap*/
-.ejemplo1{
-    justify-content: center; /*Centrar contenido*/
-    gap:20px;
+.ejemplo1 {
+    justify-content: center;
+    /*Centrar contenido*/
+    gap: 20px;
 }
+
 /*EJEMPLO*/
 /*2.- align-items + gap*/
-.ejemplo2{
+.ejemplo2 {
     align-items: center;
-    gap:20px;
+    gap: 20px;
 }
+
 /*EJEMPLO*/
 /*3.- flex-direcion + gap*/
-.ejemplo3{
-    justify-content:center;
+.ejemplo3 {
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
 }
+
 /*EJEMPLO*/
 /*4.-space-between + align-items*/
-.ejemplo4{
-    justify-content:space-between;
+.ejemplo4 {
+    justify-content: space-between;
     align-items: center;
-    padding:0 20px;
+    padding: 0 20px;
 }
+
 /*EJEMPLO*/
 /*5.-justify-content:center + align-items:center*/
-.ejemplo5{
+.ejemplo5 {
     justify-content: center;
     align-items: center;
 }
-.caja-grande{
-    width:280px;
-    height:100px;
+
+.caja-grande {
+    width: 280px;
+    height: 100px;
 }

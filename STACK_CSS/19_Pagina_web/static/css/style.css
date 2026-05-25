@@ -1,0 +1,22 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+.centro{
+    background-color:#F4F7FE;
+}
+.inicio {
+   padding: 15px 40px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.links {
+   display: flex;
+   gap: 20px;
+}

@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(219, 214, 214);
+    color: rgb(0, 0, 0);
+    /* Altura exagarada para ver scroll */
+    min-height: 150vh;
+    padding-bottom: 50px;
+}
+
+/* Posición fija (fixed) */
+.barra-navegacion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 15px 30px;
+    color: white;
+    background-color: rgb(36, 35, 35);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    /* Posición en capas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.76);
+
+}
+
+.barra-navegacion h1 {
+    font-size: 1.2rem;
+}
+
+.enlace-nav {
+    color: rgb(155, 119, 155);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.enlace-nav:hover {
+    color: rgb(133, 68, 194);
+}
+
+/* Contenedor Principal */
+.contenedor_principal {
+    display: flex;
+    flex-wrap: wrap;
+    /* Cuando los elementos no caben bajaran automaticamente*/
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+    /* Margen para que el contenido quede visible*/
+
+}
+
+.tarjeta {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.678);
+    flex-direction: column;
+    gap: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.822);
+}
+
+.tarjeta h2 {
+    font-size: 1.3rem;
+    color: rgb(155, 70, 235);
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+}
+
+.explicacion {
+    font-size: 0.9rem;
+    color: rgb(129, 82, 82);
+    line-height: 1.4;
+    /* Separacion de parrafos*/
+
+}
+
+/* Cajas grises*/
+.bloque-normal {
+    background-color: rgb(236, 228, 228);
+    color: black;
+    padding: 12px;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Ejemplo de STATIC (El que obedece)*/
+
+.bloque-estatico {
+    position: static;
+    /* Intentaremos moverlo, CSS ignorara el movimiento */
+    top: 40px;
+    left: 40px;
+    background-color: rgb(109, 109, 109);
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    border: 2px solid rgb(44, 44, 44);
+}
+
+/* Ejemplo RELATIVE (el fantasma)*/
+.molde-fantasma {
+    border: 2px dashed rgb(196, 196, 196);
+    border-radius: 6px;
+    height: 48px;
+    position: relative;
+}
+
+.bloque-relativo {
+    position: relative;
+    /* Se mueve a partir del molde fantasma*/
+    top: 25px;
+    left: 30px;
+
+    background-color: orangered;
+    padding: 12px;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgb(139, 57, 9);
+}
+
+/* Ejemplo absolute (Ventana y X)*/
+.ventana-modal {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 30px 15px 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.boton-cerrar {
+    position: absolute;
+    /* Se ancla exactamente a la esquina superior derecha de la 
+    ventana modal*/
+    top: -6px;
+    right: -12px;
+    background-color: red;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.623);
+    border: 2px solid white;
+}

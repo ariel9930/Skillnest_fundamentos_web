@@ -1,72 +1,80 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
+
+body {
     background-color: #F4F4F4;
 }
-.container-principal{
+
+.container-principal {
     width: 100%;
     min-height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.principio{
+
+.principio {
     background-color: white;
     display: flex;
     flex-direction: column;
-    margin:200px;
+    margin: 200px;
     justify-content: center;
     align-items: center;
-    border-radius:10px;
+    border-radius: 10px;
     position: relative;
-    padding-top:80px;
-    width:450px;
+    padding-top: 80px;
+    width: 450px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.24);
 
 }
-.imagen img{
-    height:150px;
+
+.imagen img {
+    height: 150px;
     width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-     position: absolute;
-     top: -90px;
-     justify-self: center;
+    position: absolute;
+    top: -90px;
+    justify-self: center;
     color: white;
-    border-radius:50%;
+    border-radius: 50%;
     font-weight: bold;
     font-size: 14px;
     border: 2px solid white;
 }
-.titulos{
+
+.titulos {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 15px;
     color: #363636;
-    
+
 }
-.titulos p{
+
+.titulos p {
     color: #928b8b;
     font-size: 25px;
 }
-.links a{
+
+.links a {
     font-weight: bold;
 
 }
-.boton{
+
+.boton {
     background-color: #4C98DC;
     border-radius: 5px;
     border: none;
-    padding:13px;
-    width:100px;
+    padding: 13px;
+    width: 100px;
     color: white;
-    margin-top:10px;
-    margin:15px;
+    margin-top: 10px;
+    margin: 15px;
 }

@@ -146,13 +146,18 @@ body {
     gap: 15px;
 }
 
+.usuario-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .item {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.info {
+.usuario-info {
     display: flex;
     align-items: center;
     gap: 12px;

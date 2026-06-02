@@ -28,45 +28,74 @@
                 <h1>Jane Doe</h1>
                 <h2>Bergen, Noruega</h2>
                 <p>Desarrolladora Frontend
-                    <br>Conocimientos en HTML, CSS, JavaScript
+                    Conocimientos en HTML, CSS, JavaScript
                 </p>
                 <a href="#">⚙️ Editar perfil</a>
             </div>
+
         </section>
-
-        <section class="ultimo">
-            <div class="solicitudes">
-                <div class="minititulos">
+        <section class="columna-derecha">
+            <div class="tarjeta">
+                <div class="tarjeta-header">
                     <h2>Solicitudes de conexión</h2>
-                    <button class="votton">Ver todas</button>
+                    <a href="#" class="btn-ver">Ver todas</a>
                 </div>
-                <div class="Usuarios">
-                    <img src="static/images/images.jfif" alt="chicharito">
-                    <div class="between">
-                        <p>Steve Jobs</p>
-                        
-                        <button class="Acep">✔</button>
-                        <button class="rech">X</button>
+                <ul class="lista-usuarios">
+                    <li class="usuario-item">
+                        <div class="usuario-info">
+                            <img src="static/images/images.jfif" alt="Steve Jobs" class="avatar">
+                            <span>Steve Jobs</span>
                         </div>
-                    </div>
-                    <div class="Usuarios">
-                        <img src="static/images/images.jfif" alt="chicharito">
-                        <p>Bill Gates</p>
-                        <button class="Acep">✔</button>
-                        <button class="rech">X</button>
-                    </div>
+                        <div class="acciones">
+                            <button class="btn-accion aceptar">✓</button>
+                            <button class="btn-accion rechazar">✕</button>
+                        </div>
+                    </li>
+                    <li class="usuario-item">
+                        <div class="usuario-info">
+                            <img src="static/images/images.jfif" alt="Bill Gates" class="avatar">
+                            <span>Bill Gates</span>
+                        </div>
+                        <div class="acciones">
+                            <button class="btn-accion aceptar">✓</button>
+                            <button class="btn-accion rechazar">✕</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tarjeta">
+                <div class="tarjeta-header">
+                    <h2>Tus conexiones</h2>
+                    <a href="#" class="btn-ver">Ver todas</a>
                 </div>
 
-                <div class="Conexiones">
-                    <div class="PP">
-                    <h2>Tus conexiones</h2>
-                    <button class="votton">Ver todas</button>
-                    </div>
-                    <p>Richard Stallman</p>
-                    <p>Linus Torvalds</p>
-                    <p>Ada Lovelace</p>
-                    <p>Grace Hopper</p>
-                </div>
+                <ul class="usuarios">
+                    <li class="item">
+                        <div class="info">
+                            <img src="static/images/images.jfif" alt="Richard Stallman" class="avatar">
+                            <span>Richard Stallman</span>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="info">
+                            <img src="static/images/images.jfif" alt="Linus Torvalds" class="avatar">
+                            <span>Linus Torvalds</span>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="info">
+                            <img src="static/images/images.jfif" alt="Ada Lovelace" class="avatar">
+                            <span>Ada Lovelace</span>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="info">
+                            <img src="static/images/images.jfif" alt="Grace Hopper" class="avatar">
+                            <span>Grace Hopper</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 </body>

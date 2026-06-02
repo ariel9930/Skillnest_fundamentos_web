@@ -96,76 +96,105 @@ body {
     border-top-right-radius: 10px;
 }
 
-.Usuarios img {
-    width: 70px;
-    height: 70px;
-    border: 2px solid white;
-    font-weight: bold;
-    color: white;
-    border-radius: 50%;
-}
-
-.Acep {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: none;
-    background-color: green;
-    color: white;
-}
-
-.rech {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: none;
-    background-color: red;
-    color: white;
-}
-
-.solicitudes {
-    background-color: white;
-    width: 415px;
-    border-radius: 7px;
-    box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.582);
-
-}
-
-.Conexiones {
-    background-color: white;
-    width: 415px;
-    border-radius: 7px;
-    margin: 20px;
-    box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.582);
-    margin-left: 13px;
-}
-
-.ultimo {
-    display: flex;
+.columna-derecha {
     flex: 1;
-    justify-content: center;
+    display: flex;
     flex-direction: column;
-
+    gap: 20px;
 }
 
-.votton {
-    border: 2px solid #4C98DC;
-    color: #4C98DC;
+.tarjeta {
     background-color: white;
-    padding: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 20px;
 }
 
-.minititulos {
+.tarjeta-header {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
-    padding: 10px;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.PP {
+.tarjeta-header h2 {
+    font-size: 18px;
+    color: #2d3748;
+}
+
+.btn-ver {
+    border: 1px solid #00abec;
+    color: #00abec;
+    text-decoration: none;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-ver:hover {
+    background-color: #00abec;
+    color: white;
+}
+
+
+.usuarios {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.item {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
-    padding: 10px;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e2e8f0;
+    object-fit: cover;
+}
+
+.info span {
+    font-size: 15px;
+    color: #4a5568;
+    font-weight: 500;
+}
+
+
+.acciones {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-accion {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-accion.aceptar {
+    background-color: #2ecc71;
+}
+
+.btn-accion.rechazar {
+    background-color: #ff7675;
 }

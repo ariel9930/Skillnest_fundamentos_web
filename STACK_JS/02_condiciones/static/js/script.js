@@ -10,18 +10,18 @@
 // Luego mostrar:
 // Descuento aplicado
 // Total a pagar
-function sistemaDescuento(){
-let nombre = prompt("ingrese su nombre: ");
-let monto = parseInt(prompt("Ingrese el monto de compra"));
-if (monto>=50000) {
-    alert(` El monto con descuento es : ${monto * 0.8}`)
-} else if (monto >=50000) {
-    alert(`El monto con descuento es: ${monto * 0.9}`)
-}else if (monto<=30000 && monto > 0) {
-    alert(` El monto con descuento es: ${monto}. sin descuento`)
-}else{
-    alert(`Ingrese valores validos`);
-}
+function sistemaDescuento() {
+    let nombre = prompt("ingrese su nombre: ");
+    let monto = parseInt(prompt("Ingrese el monto de compra"));
+    if (monto >= 50000) {
+        alert(` El monto con descuento es : ${monto * 0.8}`)
+    } else if (monto >= 50000) {
+        alert(`El monto con descuento es: ${monto * 0.9}`)
+    } else if (monto <= 30000 && monto > 0) {
+        alert(` El monto con descuento es: ${monto}. sin descuento`)
+    } else {
+        alert(`Ingrese valores validos`);
+    }
 }
 
 // ✅ Ejercicio 2: Acceso a evento
@@ -35,15 +35,15 @@ if (monto>=50000) {
 // Mostrar:
 // “Acceso permitido”
 // o “Acceso denegado”
-function AccesoEvento(){
-    let edad  = parseInt(prompt("Ingrese su edad."));
-    if (edad>=18) {
+function AccesoEvento() {
+    let edad = parseInt(prompt("Ingrese su edad."));
+    if (edad >= 18) {
         alert(`Acceso permitido`)
-    } else{
+    } else {
         let permiso = prompt("¿Vienes acompañado con un adulto? (si o no)").toLowerCase();
         if (permiso === "si") {
             alert(`Acceso permitido.`);
-        } else{
+        } else {
             alert(`Acceso denegado.`)
         }
     }
@@ -59,6 +59,24 @@ function AccesoEvento(){
 // Además:
 // Si la temperatura supera los 35 grados, mostrar una alerta adicional:
 //  “Temperatura extrema”.
+function mostrarTemperatura() {
+    let temperatura = parseInt(prompt("Ingresa la temperatura actual:"))
+    if (temperatura < 10) {
+        mensaje = "Hace frio"
+    } else if (temperatura >= 10 && temperatura <= 24) {
+        mensaje = "temperatura agradable";
+    } else{
+        mensaje = "Hace calor";
+    }
+    if (temperatura > 35){
+        mensaje += " Ingresar valores validos";
+    }
+    if(temperatura > 35 && temperatura < 50){
+        mensaje += "\n temperatura extrema";
+    } 
+    alert(mensaje)
+}
+
 
 
 // ✅ Ejercicio 4: Verificación de administrador
@@ -73,6 +91,17 @@ function AccesoEvento(){
 // Si ambos son correctos → “Bienvenido administrador”
 // Si usuario es correcto pero contraseña incorrecta → “Contraseña incorrecta”
 // Si usuario no existe → “Usuario no encontrado”
+function ejercicio4(){
+    let usuario = prompt("Ingrese su nombre de usuario:")
+    let contrasena = prompt("Ingrese su contrasena:");
+    if (usuario === "admin" && contrasena === "12345"){
+        alert("Bienvenido Administrador")
+    } else if (usuario === "admin") {
+        alert("Contraseña Incorrecta");
+    } else{
+        alert("Usuario no encontrado");
+    }
+}
 
 // ✅ Ejercicio 5: Sistema de aprobación
 // 📝 Enunciado
@@ -89,6 +118,14 @@ function AccesoEvento(){
 // Además:
 // Si alguna nota es menor a 2.0 mostrar:
 //  “Debe asistir a reforzamiento”.
+function promedio(){
+    let nombreEstudiante = prompt("Ingresa tu nombre: ")
+    let nota1 = parseInt(prompt("Ingrese nota: "))
+    let nota2 = parseInt(prompt("Ingrese nota: "))
+    let nota3 = parseInt(prompt("Ingrese nota: "))
+    let promedio = (nota1 + nota2 + nota3) / 3
+    if(promedio >= 6) {alert(`El estudiante ${nombreEstudiante} tiene un rpo`) }
+}
 
 // 📌 Requisitos Técnicos
 // Cada ejercicio debe:

@@ -124,8 +124,18 @@ function promedio(){
     let nota2 = parseInt(prompt("Ingrese nota: "))
     let nota3 = parseInt(prompt("Ingrese nota: "))
     let promedio = (nota1 + nota2 + nota3) / 3
-    if(promedio >= 6) {alert(`El estudiante ${nombreEstudiante} tiene un rpo`) }
+    if(promedio >= 6) {alert(`El estudiante ${nombreEstudiante} tiene un promedio de ${promedio} y debe`);
+} else if (promedio >= 6.0){
+    alert(`El estudiante ${nombreEstudiante} tiene un promedio de ${promedio} y aprobo con exelencia`);
+}else if(promedio >= 4.0 &&  promedio <= 5.9){
+    alert(`el estudiante ${nombreEstudiante} tiene un promedio de ${promedio} y aprobo`);
+} else if(promedio <=4.0){
+    alert(`El estudiante ${nombreEstudiante} tiene un promedio de ${promedio} y reprobo`);
+} else{(promedio <=2.0)
+    alert(`el estudiante ${nombreEstudiante} tiene un promedio de ${promedio} debe asitir a reforzamiento.`);
+}   
 }
+
 
 // 📌 Requisitos Técnicos
 // Cada ejercicio debe:

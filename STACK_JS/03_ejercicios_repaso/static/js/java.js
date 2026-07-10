@@ -17,7 +17,7 @@
 // - Nombre del cliente
 // - Categoría del envío
 // - Valor correspondiente al despacho
-function ejercicio1(){
+function kiloscliente(){
     let nombreCliente = prompt("Ingresar nombre de cliente: ");
     let peso = parseInt(prompt("Ingresar peso del paquete: "));
     let mensaje = "";
@@ -66,11 +66,19 @@ function ejercicio1(){
 // - Mostrar un mensaje diferente según el tipo de usuario.
 
 // Utilizar operadores lógicos para realizar las validaciones.
-function ejercicio2(){
-    let Tipo = prompt("Tipo de usuario");
-    let prestamoProfesor = parseInt(prompt("Ingrese la cantidad de libros:\nl)"));
-    let Estudiante = "Estudiante";
-    let Profesor = "Profesor";
+
+function Acceso_bibloteca() {
+    let usuario = prompt("Ingrese su tipo de usuario (Estudiante o Profesor)").toLowerCase();
+    let libros = parseInt(prompt("Ingrese la cantidad de libros"))
+    if (usuario === "estudiante" && libros <= 4) {
+        alert(`${usuario}, su prestamo de ${libros} libros es valido`)
+    } else if (usuario === "estudiante" && libros >= 5) {
+        alert(`${usuario}, su prestamo de ${libros} libros es invalido, supera el limite de 4 libros`)
+    } else if (usuario === "profesor" && libros <= 6) {
+        alert(`${usuario}, su prestamo de ${libros} libros es valido`)
+    } else if (usuario === "profesor" && libros >= 7) {
+        alert(`${usuario}, su prestamo de ${libros} libros es invalido, supera el limite de 6 libros`)
+    }
 }
 
 // # Ejercicio 3: Clasificación Deportiva
@@ -92,7 +100,24 @@ function ejercicio2(){
 // - Edad
 // - Categoría asignada
 
-// ---
+function Clasficacion_deportiva() {
+    let nombre = prompt("Nombre del participante: ")
+    let edad = parseInt(prompt("Edad: "))
+    if (edad >= 18 && edad >= 16) {
+        alert(`El participante ${nombre} tiene ${edad} años.
+            \n Va en el grupo 1`)
+    } else if (edad <= 15 && edad >= 13) {
+        alert(`El participante ${nombre} tiene ${edad} años.
+            \n Va en el grupo 2`)
+    } else if (edad <= 12 && edad >= 10) {
+        alert(`El participante ${nombre} tiene ${edad} años.
+            \n Va en el grupo 3`)
+    } else if (edad <= 9 && edad >= 7) {
+        alert(`El participante ${nombre} tiene ${edad} años.
+            \n Va en el grupo 4`)
+    }
+}
+
 
 // # Ejercicio 4: Sistema de Bonificación
 
@@ -113,7 +138,23 @@ function ejercicio2(){
 // - Nivel de antigüedad
 // - Mensaje indicando si recibe o no bonificación.
 
-// ---
+function Sistema() {
+    let nombre = prompt("Ingrese el nombre")
+    let años = parseInt(prompt("ingrese los años de servicios"))
+    if (años >= 30 && años >= 20) {
+        alert(`El trabajador ${nombre} tiene ${años} años de servicio.
+            \n Recibe bono de $200000`)
+    } else if (años <= 19 && años >= 10) {
+        alert(`El trabajador ${nombre} tiene ${años} años de servicio.
+            \n Recibe bono de $150000`)
+    } else if (años <= 9 && años >= 2) {
+        alert(`El trabajador ${nombre} tiene ${años} años de servicio.
+            \n Recibe bono de $100000`)
+    } else {
+        alert(`El trabajador ${nombre} tiene ${años} años de servicio.
+            \n no recibe bono`)
+    }
+}
 
 // # Ejercicio 5: Evaluación de Velocidad
 
@@ -165,3 +206,21 @@ function ejercicio2(){
 // - Mostrar mensajes utilizando emojis.
 // - Mostrar resultados dentro del HTML utilizando `innerHTML`.
 // - Cambiar colores o estilos mediante JavaScript según el resultado obtenido.
+
+function Evaluacion_velocidad() {
+    let nombre = prompt("Ingrese el nombre del conductor")
+    let vel = parseInt(prompt("ingrese la velocidad registrada (KM/h)"))
+    if (vel <= 150 && vel >= 100) {
+        alert(`El conductor ${nombre} tiene una velocidad registrada de  ${vel}KM/h.
+            \n Una velocidad rapida`)
+    } else if (vel <= 99 && vel >= 50) {
+        alert(`El conductor ${nombre} tiene una velocidad registrada de  ${vel}KM/h.
+            \n Una velocidad media`)
+    } else if (vel <= 49 && vel >= 0) {
+        alert(`El conductor ${nombre} tiene una velocidad registrada de  ${vel}KM/h.
+            \n Una velocidad lenta`)
+    } else {
+        alert(`El conductor ${nombre} tiene una velocidad registrada de  ${vel}KM/h.
+            \n Ha exedido el limite`)
+    }
+}

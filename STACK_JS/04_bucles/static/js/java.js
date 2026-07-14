@@ -29,5 +29,37 @@ function recorrerLista() {
     }
 }
 
-
 /* Ejemplo de bucle while*/
+
+function reproducción() {
+    let reproduciendo = true;
+
+    while (reproduciendo) {
+        alert("La canción sigue sonando...");
+        // Simulación de una acción que detendría la reproducción
+        reproduciendo = false;
+    }
+}
+
+function SimulaciónCarga() {
+    let datosPendientes = 5;
+
+    while (datosPendientes > 0) {
+        alert(`Cargando datos...`);
+        datosPendientes--;
+    }
+}
+
+function contraseñaCorrecta() {
+    let contraseñaCorrecta = false;
+    // !variables = variable es distinta a  verdadero - dentro de una condición
+    while (!contraseñaCorrecta) {
+        let intento = prompt("Ingresa tu contraseña:");
+        if (intento === "1234") {
+            contraseñaCorrecta = true;
+            alert("Acceso concedido.");
+        } else {
+            alert("Contraseña incorrecta, intenta de nuevo.");
+        }
+    }
+}

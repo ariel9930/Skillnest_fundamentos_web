@@ -64,18 +64,33 @@ function ejercicioss2() {
 }
 
 function ejercicioss3() {
-    let notas = [6.7, 3.5, 4.5,6.0, 4.5]
+    let notas = [6.7, 3.5, 4.5, 6.0, 4.5]
     let suma = 0
-    for (let i = 0; i < notas.length; i++){
+    for (let i = 0; i < notas.length; i++) {
         suma += notas[i]
     }
     let promedio = suma / notas.length
     alert(`${promedio.toFixed(1)}`)
 }
 
-function ejercicioss4(){
-    let Temperaturas = [18,20,15,22,19,25,17]
-    for(let i = 20; i >= Temperaturas.length; i++){
-        if(){}
+function ejercicioss4() {
+    let Temperaturas = [18, 20, 15, 22, 19, 25, 17]
+    for (let i = 0; i < Temperaturas.length; i++) {
+        if (Temperaturas[i] > 20) {
+            alert(Temperaturas[i])
+        }
     }
+}
+
+function ejercicioss5() {
+    let numerros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    let pares = 0
+    let impares = 0
+    for (let i = 0; i < numerros.length; i++) {
+        if (numerros[i % 2 == 0]) {
+            pares++
+        } else (numerros[i]); {
+            impares++
+        alert(numerros[i])}
     }
+}

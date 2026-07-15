@@ -35,17 +35,19 @@ function ejercicio2() {
 // Producto 5 - Descuento aplicado: 25%​​
 function ejercicio3() {
     for (let i = 1; i <= 5; i++) {
-        let descuento = i * 5;
-        alert(`producto ${i} - Descuento aplicado ${descuento}%`);
+        let valorProducto = parseInt(prompt(`Ingrese valor del producto`))
+        alert(`Producto ${i} - Descuento aplicado: ${i * 5}
+        \nValor final: ${valorProducto - (valorProducto * (i * 0.05))}`)
     }
 }
+
 // 🎮 Calcular el total de puntos en un videojuego: 
 // Un jugador gana 50 puntos cada vez que completa un nivel. 
 // Escribe un programa que calcule la puntuación total después de 5 niveles usando un bucle. 
 // Ejemplo de salida esperada:
 // Puntos acumulados: 250
-function ejercicio4(){
-    for(let i = 1; i <=5; i++){
+function ejercicio4() {
+    for (let i = 1; i <= 5; i++) {
         alert(`Nivel ${i} completado... \nTotal de puntos: ${(i * 50)}`)
     } alert("Puntos acumulados: 250")
 }
@@ -60,8 +62,8 @@ function ejercicio4(){
 // ...
 // Tienes 1 notificación nueva.
 // No tienes notificaciones pendientes.
-function ejercicio5(){
-    for(let i = 5; i>=1; i--){
+function ejercicio5() {
+    for (let i = 5; i >= 1; i--) {
         alert(`Tienes ${i} notificaciones nuevas.`)
     } alert("No tienes notificaciones pendientes.")
 }

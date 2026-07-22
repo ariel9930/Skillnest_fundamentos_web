@@ -33,11 +33,69 @@ function ejercicio2() {
 }
 
 
+//Recorrer un arreglo
+
+function Recorrer() {
+    let notas = [6.7, 5.8, 4.1, 6.7, 3.2, 4.6, 6.2];
+
+    for (let i = 0; i < notas.length; i++) {
+
+        alert(`Mostrando notas ${i + 1} de ${notas.length} : ${notas[i]}`);
 
 
 
+        //Sumar elementos dentro de un bucle
+    }
+}
+function ventasa() {
+    let ventas = [10000, 5000, 12000, 8000];
+
+    let total = 0;
+
+    for (let i = 0; i < ventas.length; i++) {
+
+        total += ventas[i]; //+= acumula
+
+    }
+
+    alert(`El resultado final es : ${total}`);
+}
+
+//Calcular un promedio
+function calcularpromedio() {
+    let notas = [5.8, 6.2, 4.9, 6.5];
+
+    let suma = 0;
+
+    for (let i = 0; i < notas.length; i++) {
+
+        suma += notas[i];
+
+    }
+    alert(`La suma acumulada es ${suma}`)
+    let promedio = suma / notas.length;
+
+    alert(`Notas: ${notas.join(` - `)}\nPromedio: ${promedio}`);
+}
 
 
+//condicion
+
+
+function BuscarMayoresDeEdad(){
+let edades = [12,15,18,20,25];
+let mayores = [];
+for(let i=0;i<edades.length;i++){
+//Condicion para buscar a mayores de edad
+    if(edades[i] >= 18){
+
+        mayores.push(edades[i]); // añade la posicion que cumple la condicion
+    }
+
+}
+alert(`De la lista de edades: ${edades.join(' / ')}
+\nLos mayores son: ${mayores.join(' / ')}`)
+}
 
 
 
@@ -87,10 +145,7 @@ function ejercicioss5() {
     let pares = 0
     let impares = 0
     for (let i = 0; i < numerros.length; i++) {
-        if (numerros[i % 2 == 0]) {
-            pares++
-        } else (numerros[i])
-            impares++
-        
+
     }
 }
+

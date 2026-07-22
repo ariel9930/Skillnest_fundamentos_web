@@ -82,21 +82,82 @@ function calcularpromedio() {
 //condicion
 
 
-function BuscarMayoresDeEdad(){
-let edades = [12,15,18,20,25];
-let mayores = [];
-for(let i=0;i<edades.length;i++){
-//Condicion para buscar a mayores de edad
-    if(edades[i] >= 18){
+function BuscarMayoresDeEdad() {
+    let edades = [12, 15, 18, 20, 25];
+    let mayores = [];
+    for (let i = 0; i < edades.length; i++) {
+        //Condicion para buscar a mayores de edad
+        if (edades[i] >= 18) {
 
-        mayores.push(edades[i]); // añade la posicion que cumple la condicion
+            mayores.push(edades[i]); // añade la posicion que cumple la condicion
+        }
+
     }
-
-}
-alert(`De la lista de edades: ${edades.join(' / ')}
+    alert(`De la lista de edades: ${edades.join(' / ')}
 \nLos mayores son: ${mayores.join(' / ')}`)
 }
 
+
+//Encontrar el menor y el mayor
+
+function menormayor() {
+    let numeros = [10, 35, 7, 90, 22, 90, 2];
+
+    let menor = numeros[0];
+    let mayor = numeros[0];
+
+    for (let i = 1; i < numeros.length; i++) {
+
+        if (numeros[i] < menor) {
+            menor = numeros[i];
+
+        } else if (numeros[i] > mayor) {
+            mayor = numeros[i];
+        } else {
+            console.log(`Valores repetidos: ${numeros[i]}`)
+        }
+
+    }
+    alert(`De los numeros ${numeros.join(' / ')}\n
+    El menor es: ${menor}
+    El mayor es: ${mayor}`);
+}
+
+
+//Ejemplo integrador
+//Tarea: Unir los console.log en una alerta.
+//Eliminar el ultimo valor y mostrarlo. ok
+//Añadir dos valores nuevos con .push (prompt) ok
+//contar cantidad de ventas mayores a $10.000. 
+function calcularVentas() {
+    let ventas = [5000, 8000, 12000, 3000, 10000, 9000, 4000];
+    let total = 0;
+    let mayores = [0];
+    let contadorVentas = 0;
+    let mayor = ventas[0];
+    let valorEliminado = ventas.pop();
+    let valor1 = parseInt(prompt("Ingrese primer valor"));
+    let valor2 = parseInt(prompt("Ingrese segundo valor"));
+    ventas.push(valor1, valor2);
+
+    for (let i = 0; i < ventas.length; i++) {
+        total += ventas[i];
+        if (ventas[i] > mayor) {
+            mayor = ventas[i];
+            if (ventas[i] >= 10000) {
+                mayores.push(ventas[i])
+                contadorVentas++;
+            }
+        }
+
+    }
+
+    alert(`Total de ventas: ${total} \nMayor: ${mayor}
+        promedio: ${total / ventas.length}
+        Valores sobres $10.000. ${mayores.join(' / ')}
+        Conteo de mayores: ${contadorVentas}
+        Valor Elminado: ${valorEliminado}`);
+}
 
 
 

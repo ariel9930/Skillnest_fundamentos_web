@@ -89,8 +89,8 @@ function ejercicioss5() {
     for (let i = 0; i < numerros.length; i++) {
         if (numerros[i % 2 == 0]) {
             pares++
-        } else (numerros[i]); {
+        } else (numerros[i])
             impares++
-        alert(numerros[i])}
+        
     }
 }

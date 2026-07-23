@@ -9,7 +9,9 @@ function filtrarjuego() {
     ];
 
     let edadMinima = 12;
+    let nga = parseInt(prompt("Ingrese edad:"))
     let recomendados = [];
+    
 
     for (let i = 0; i < videojuegos.length; i++) {
         if (videojuegos[i].edadRecomendada <= edadMinima) {
@@ -17,7 +19,7 @@ function filtrarjuego() {
         }
     }
 
-    console.log("Juegos recomendados: ", recomendados);
+    alert(`Juegos recomendados: ${recomendados.join(" / ")}`);
 }
 
 
@@ -42,7 +44,7 @@ for (let i = 0; i < historialReproduccion.length; i++) {
     }
 }
 
-console.log("La canción", cancionBuscada, "se reprodujo", contador, "veces.");
+alert(`La canción ${cancionBuscada} se reprodujo ${contador} veces.`);
 }
 
 //🕹️ Organizadores de torneo de videojuegos
@@ -71,7 +73,7 @@ for (let i = 0; i < jugadores.length; i++) {
     }
 }
 
-console.log("Grupos formados: ", grupos);
+alert(`Grupos formados: ${grupos.join(" / ")}`);
 }
 
 //🎟️ Simulador de una lista de espera en un cine
@@ -93,5 +95,5 @@ for (let i = 0; i < cantidadAtendidos; i++) {
 
 filaClientes = filaClientes.slice(cantidadAtendidos);
 
-console.log("Clientes atendidos: ", atendidos);
-console.log("Clientes en espera: ", filaClientes);}
+alert(`Clientes atendidos: ${atendidos.join(" / ")}`);
+alert(`Clientes en espera: ${cantidadAtendidos}`);}

@@ -28,15 +28,26 @@ if (boton !== null) {
 /* Crear un botón y aplicar condiciones al igual que el ejemplo...
 -Debe cambiar su texto al momento de hacerle click
 -Debe actvarse un hover js cambiando el color de fondo */
-const Button = document.getElementById(".btn botonn");
 
-Button.addEventListener("click", function () {
-    console.log("El ratón está sobre el botón");
-    Button.innerText = "tungtung"
+let Button = document.querySelector(".btn");
+Button.addEventListener("mouseover", function () {
+    Button.style.backgroundColor = "blue";
+                Button.style.color = "white";
 
 });
 
 Button.addEventListener("mouseout", function () {
-    console.log("El ratón ha salido del botón");
+    Button.style.backgroundColor = "white";
+            Button.style.color = "black";
+});
+
+Button.addEventListener("click", function () {
+    if(this.innerText === "botonsin din dun"){
+    this.innerText = "apretaste el boton";
+    Button.style.backgroundColor = "blue";
+    }else{
+        this.innerText = "botonsin din dun";
+    }
+
 
 });

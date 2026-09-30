@@ -367,7 +367,7 @@ main {
 /* IMAGEN TARJETA */
 
 .card-imagen {
-    min-height: 180px;
+    min-height: 10px;
 
     display: flex;
 
